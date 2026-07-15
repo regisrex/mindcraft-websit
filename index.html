@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindcraft Thinktank — ALU E-Lab</title>
+    <meta name="description" content="Mindcraft is a six-person thinktank from the African Leadership University, built through the E-Lab program to tackle the DRC's agricultural future.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ──────────────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="#home" class="nav-brand">
+
+            <span>MINDCRAFT</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home"    class="nav-link active">Home</a></li>
+            <li><a href="#journey" class="nav-link">Our Journey</a></li>
+            <li><a href="#about"   class="nav-link">About Us</a></li>
+            <li><a href="#mission" class="nav-link">The Mission</a></li>
+            <li><a href="#contact" class="nav-link nav-pill">Partner With Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+
+<!-- ── HOME ────────────────────────────────────────────────────── -->
+<!--
+    HERO IMAGE: Drop a team photo or group shot as images/hero.jpg
+    (recommended 800×600 or larger, portrait/landscape both work).
+-->
+<section id="home" class="hero">
+    <div class="hero-body">
+        <div class="hero-text">
+            <!--<span class="pill-label">ALU E-Lab · Kigali · 2026</span>-->
+            <h1>We Are<br><em>Mindcraft.</em></h1>
+            <p class="hero-sub">Six entrepreneurial leaders from the African Leadership University — built through the E-Lab program to tackle one of the DRC's most urgent challenges: agricultural self-sufficiency.</p>
+            <div class="hero-btns">
+                <a href="#about" class="btn btn-gold">Meet the Team</a>
+                <a href="#journey" class="btn btn-outline">Our E-Lab Journey →</a>
+            </div>
+        </div>
+        <!-- Replace images/hero.jpg with your team photo -->
+        <div class="hero-img">
+            <img src="images/hero.jpg" alt="The Mindcraft Thinktank team">
+        </div>
+    </div>
+
+    <div class="stat-bar">
+        <div class="stat-row">
+            <div class="stat">
+                <strong>6</strong>
+                <span>Team members</span>
+            </div>
+            <div class="stat-div"></div>
+            <div class="stat">
+                <strong>6</strong>
+                <span>E-Lab challenges completed</span>
+            </div>
+            <div class="stat-div"></div>
+            <div class="stat">
+                <strong>1</strong>
+                <span>Venture built</span>
+            </div>
+            <div class="stat-div"></div>
+            <div class="stat">
+                <strong>3</strong>
+                <span>DRC hub regions targeted</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── JOURNEY ─────────────────────────────────────────────────── -->
+<section id="journey" class="section bg-white">
+    <div class="container">
+        <div class="sec-head" data-reveal>
+            <span class="eyebrow">E-Lab Evolution</span>
+            <h2>Our Journey Through<br>the E-Lab Program</h2>
+            <p class="sec-lead">Six challenges that shaped how we think, research, collaborate, and build. Here is what we learned.</p>
+        </div>
+
+        <div class="journey-grid">
+
+            <div class="jc" data-reveal>
+                <div class="jc-num">01</div>
+                <span class="jc-label">Our Introduction</span>
+                <p class="jc-theme">Competency Mapping &amp; Team Formation</p>
+                <p>Formulated our identity as a collaborative unit — mapping individual strengths in business strategy, community partnerships, and data-driven decision-making. We established a clear operating agreement and drafted our Mission Statement.</p>
+                <blockquote class="jc-quote">"To prove that Congo's prosperity can be grown from its own soil."</blockquote>
+                <p class="jc-output">→ Operational Charter + Skills Matrix</p>
+            </div>
+
+            <div class="jc" data-reveal>
+                <div class="jc-num">02</div>
+                <span class="jc-label">Discover Africa</span>
+                <p class="jc-theme">Systems Thinking &amp; Root Cause Analysis</p>
+                <p>Confronted the DRC's structural agricultural paradox: $180M+ spent annually on sugar imports despite 80M+ hectares of uncultivated arable land. Through PESTLE analysis and the Five Whys framework, we identified deep institutional and historical drivers dating back to 1960 and 1973.</p>
+                <p class="jc-output">→ PESTLE Analysis + Five Whys Root Cause Diagram</p>
+            </div>
+
+            <div class="jc" data-reveal>
+                <div class="jc-num">03</div>
+                <span class="jc-label">Help-Lab</span>
+                <p class="jc-theme">Radical Empathy &amp; Direct Community Action</p>
+                <p>Partnered with WHATIF at the IRAMIRO Center to raise funds for pediatric medical insurance. Hands-on community service proved that direct contributions can bypass structural barriers to deliver immediate impact.</p>
+                <blockquote class="jc-quote">"Empathy looks different for everyone."</blockquote>
+                <p class="jc-output">→ Pediatric Health Campaign + Impact Report</p>
+            </div>
+
+            <div class="jc" data-reveal>
+                <div class="jc-num">04</div>
+                <span class="jc-label">Hunt for Treasure</span>
+                <p class="jc-theme">Strategic Scale &amp; Institutional Learning</p>
+                <p>Interviewed WaterAid, extracting four key insights: system strengthening over infrastructure, cooperative leadership, the federation model of evidence-based scaling, and acting before perfect conditions exist.</p>
+                <p class="jc-output">→ WaterAid Diagnostic Report + Federation Framework</p>
+            </div>
+
+            <div class="jc" data-reveal>
+                <div class="jc-num">05</div>
+                <span class="jc-label">Launch Your Mission V2</span>
+                <p class="jc-theme">Business Feasibility &amp; Commercial Design</p>
+                <p>Translated systems-level research into a commercial model. The "Train, Grow, Connect" framework builds a closed domestic value chain connecting smallholders to regional processors like Sucraf.</p>
+                <p class="jc-output">→ Lean Canvas + Train, Grow, Connect Roadmap</p>
+            </div>
+
+            <div class="jc jc--active" data-reveal>
+                <div class="jc-num jc-num--gold">06</div>
+                <span class="jc-label">Your Digital Print <span class="active-tag">Active</span></span>
+                <p class="jc-theme">Digital Synthesis &amp; Platform Engineering</p>
+                <p>This final milestone synthesizes our research, social impact, and commercial design into an interactive digital platform to recruit strategic investors, processors, and farming cooperatives across the DRC.</p>
+                <p class="jc-output">→ This responsive web ecosystem — built, deployed, live.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── ABOUT ────────────────────────────────────────────────────── -->
+<section id="about" class="section bg-cream">
+    <div class="container">
+        <div class="sec-head" data-reveal>
+            <span class="eyebrow">The Thinktank</span>
+            <h2>Who We Are</h2>
+            <p class="sec-lead">Six people. Diverse strengths. One operating agreement.</p>
+        </div>
+
+        <div class="team-grid">
+
+            <article class="tm" data-reveal>
+                <div class="tm-photo">
+                    <img src="https://ui-avatars.com/api/?name=Butera+Bruno&background=1A2E5E&color=ffffff&size=400&bold=true&font-size=0.35" alt="Butera Bruno" loading="lazy">
+                </div>
+                <div class="tm-body">
+                    <span class="tm-role">Business Strategist</span>
+                    <h3>Butera Bruno</h3>
+                </div>
+            </article>
+
+            <article class="tm" data-reveal>
+                <div class="tm-photo">
+                    <img src="https://ui-avatars.com/api/?name=Jenny+Ndayishimiye&background=CC2229&color=ffffff&size=400&bold=true&font-size=0.35" alt="Ndayishimiye Jenny" loading="lazy">
+                </div>
+                <div class="tm-body">
+                    <span class="tm-role">Partnership Lead</span>
+                    <h3>Ndayishimiye Jenny</h3>
+                </div>
+            </article>
+
+            <article class="tm" data-reveal>
+                <div class="tm-photo">
+                    <img src="https://ui-avatars.com/api/?name=Iriza+Ketsia&background=1A2E5E&color=ffffff&size=400&bold=true&font-size=0.35" alt="Iriza Ineza Ketsia" loading="lazy">
+                </div>
+                <div class="tm-body">
+                    <span class="tm-role">Systems Analyst</span>
+                    <h3>Iriza Ineza Ketsia</h3>
+                </div>
+            </article>
+
+            <article class="tm" data-reveal>
+                <div class="tm-photo">
+                    <img src="https://ui-avatars.com/api/?name=Leslie+Ntihemuka&background=CC2229&color=ffffff&size=400&bold=true&font-size=0.35" alt="NTIHEMUKA G. Leslie" loading="lazy">
+                </div>
+                <div class="tm-body">
+                    <span class="tm-role">UX Research Director</span>
+                    <h3>NTIHEMUKA G. Leslie</h3>
+                </div>
+            </article>
+
+            <article class="tm" data-reveal>
+                <div class="tm-photo">
+                    <img src="https://ui-avatars.com/api/?name=Regis+Ndizihiwe&background=1A2E5E&color=ffffff&size=400&bold=true&font-size=0.35" alt="NDIZIHIWE Regis" loading="lazy">
+                </div>
+                <div class="tm-body">
+                    <span class="tm-role">Product Engineer</span>
+                    <h3>NDIZIHIWE Regis</h3>
+                </div>
+            </article>
+
+            <article class="tm" data-reveal>
+                <div class="tm-photo">
+                    <img src="https://ui-avatars.com/api/?name=Kulong+Nyamojwok&background=CC2229&color=ffffff&size=400&bold=true&font-size=0.35" alt="Nyamojwok A. O. Kulong" loading="lazy">
+                </div>
+                <div class="tm-body">
+                    <span class="tm-role">Operations Coordinator</span>
+                    <h3>Nyamojwok A. O. Kulong</h3>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── MISSION ──────────────────────────────────────────────────── -->
+<section id="mission" class="section bg-white">
+    <div class="container">
+        <div class="sec-head" data-reveal>
+            <span class="eyebrow">Our Venture</span>
+            <h2>The Problem We're Solving</h2>
+            <p class="sec-lead">The DRC spends $180M+ annually on sugar imports — despite 80M+ hectares of uncultivated arable land. Our venture, built through the E-Lab, addresses this directly.</p>
+        </div>
+
+        <!-- Train · Grow · Connect -->
+        <div class="vc-grid" data-reveal>
+            <div class="vc-card">
+                <div class="vc-step">01</div>
+                <div class="vc-icon">🌾</div>
+                <h3>Train</h3>
+                <p class="vc-sub">Organize &amp; Equip Cooperatives</p>
+                <p>Organizing local smallholders into agricultural cooperatives and providing training on high-yield sugarcane farming, irrigation, and sustainable land management.</p>
+                <div class="vc-tags">
+                    <span>Cooperative Formation</span>
+                    <span>Skills Training</span>
+                    <span>Women's Leadership</span>
+                </div>
+            </div>
+
+            <div class="vc-sep" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+
+            <div class="vc-card">
+                <div class="vc-step">02</div>
+                <div class="vc-icon">🌿</div>
+                <h3>Grow</h3>
+                <p class="vc-sub">Distribute Raw Materials</p>
+                <p>Distributing organic, high-yield sugarcane seeds and agricultural inputs to maximize output on existing family plots, reducing dependency on expensive external inputs.</p>
+                <div class="vc-tags">
+                    <span>Seed Distribution</span>
+                    <span>Input Supply</span>
+                    <span>Yield Optimization</span>
+                </div>
+            </div>
+
+            <div class="vc-sep" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+
+            <div class="vc-card">
+                <div class="vc-step">03</div>
+                <div class="vc-icon">🔗</div>
+                <h3>Connect</h3>
+                <p class="vc-sub">B2B Off-Taker Integrations</p>
+                <p>Securing contract-backed supply agreements with regional processors like Sucraf to prevent crop waste and guarantee sales — creating a reliable closed-loop value chain.</p>
+                <div class="vc-tags">
+                    <span>Sucraf Partnership</span>
+                    <span>Supply Contracts</span>
+                    <span>Zero Crop Waste</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Videos -->
+        <!-- ↓ Replace each XXXXXXXXXX with the YouTube video ID from its URL: youtube.com/watch?v=XXXXXXXXXX -->
+        <div class="vids-wrap" data-reveal>
+            <div class="vids-head">
+                <span class="eyebrow">Watch Us Work</span>
+                <h3>Featured Videos</h3>
+            </div>
+            <div class="vids-grid">
+
+                <div class="vid-card">
+                    <div class="vid-frame">
+                        <iframe src="https://www.youtube.com/embed/YwkyyGBasOU?rel=0" title="LAUNCHING OUR MISSION | MINDCRAFT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="vid-title">LAUNCHING OUR MISSION | MINDCRAFT</p>
+                </div>
+
+                <div class="vid-card">
+                    <div class="vid-frame">
+                        <iframe src="https://www.youtube.com/embed/fUqOozSD6e8?rel=0" title="Hunt for Treasure | Team Mindcraft Interviews WaterAid – E-Lab Challenge 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="vid-title">Hunt for Treasure | Team Mindcraft Interviews WaterAid – E-Lab Challenge 4</p>
+                </div>
+
+                <div class="vid-card">
+                    <div class="vid-frame">
+                        <iframe src="https://www.youtube.com/embed/-29MFvbd6xU?rel=0" title="Being a Source of Their Smile | Mindcraft Joins What IF at IRAMIRO Center | ALU E-Lab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="vid-title">Being a Source of Their Smile | Mindcraft Joins What IF at IRAMIRO Center | ALU E-Lab</p>
+                </div>
+
+                <div class="vid-card">
+                    <div class="vid-frame">
+                        <iframe src="https://www.youtube.com/embed/P-d0yIjb2iM?rel=0" title="The Abundance Curse: The Untold Story of DRC's Rural Farming Communities | Mindcraft" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="vid-title">The Abundance Curse: The Untold Story of DRC's Rural Farming Communities | Mindcraft</p>
+                </div>
+
+                <div class="vid-card">
+                    <div class="vid-frame">
+                        <iframe src="https://www.youtube.com/embed/XQiTlZf0C3c?rel=0" title="Meet Mindcraft | E-LAB THINKTANK INTRO | ALU RWANDA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="vid-title">Meet Mindcraft | E-LAB THINKTANK INTRO | ALU RWANDA</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── REACH / MAP ──────────────────────────────────────────────── -->
+<section id="reach" class="section bg-cream">
+    <div class="container">
+        <div class="sec-head" data-reveal>
+            <span class="eyebrow">Our Footprint</span>
+            <h2>Based at ALU.<br>Building for Congo.</h2>
+            <p class="sec-lead">We are a Kigali-based thinktank solving a problem 4,000 km away. Our research is rooted at ALU — our impact is targeted at three agricultural regions across the DRC.</p>
+        </div>
+        <div class="reach-layout" data-reveal>
+            <div id="map"></div>
+            <div class="reach-info">
+                <div class="reach-card reach-card--alu">
+                    <span class="eyebrow">Home Base</span>
+                    <strong>African Leadership University</strong>
+                    <span>Kigali Campus, Rwanda</span>
+                    <p>Where Team Mindcraft researches, designs, and builds. The E-Lab program at ALU is where this venture was conceived and developed.</p>
+                </div>
+                <div class="reach-card">
+                    <span class="eyebrow">DRC Mission Zones</span>
+                    <ul class="reach-hubs">
+                        <li>
+                            <span class="rh-dot"></span>
+                            <div><strong>Kwilu-Ngongo</strong><span>Bas-Congo Province — primary sugar region</span></div>
+                        </li>
+                        <li>
+                            <span class="rh-dot"></span>
+                            <div><strong>Bas-Uélé</strong><span>Northern DRC — arable land corridor</span></div>
+                        </li>
+                        <li>
+                            <span class="rh-dot"></span>
+                            <div><strong>Kasaï Region</strong><span>Central DRC — smallholder cooperative hub</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT ──────────────────────────────────────────────────── -->
+<section id="contact" class="section bg-cream">
+    <div class="container">
+        <div class="sec-head" data-reveal>
+            <span class="eyebrow">Get In Touch</span>
+            <h2>Work With Us</h2>
+            <p class="sec-lead">Are you a processor, investor, or farmer? Tell us your role and we'll connect you with the right person on our team.</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- Form -->
+            <div class="form-wrap" data-reveal>
+                <form class="cform" id="contactForm" novalidate>
+                    <div class="ff">
+                        <label class="fl">I am a:</label>
+                        <div class="chips">
+                            <label class="chip"><input type="radio" name="profile" value="processor"><span>B2B Processor</span></label>
+                            <label class="chip"><input type="radio" name="profile" value="investor"><span>Investor</span></label>
+                            <label class="chip"><input type="radio" name="profile" value="farmer"><span>Farmer / Coop</span></label>
+                        </div>
+                    </div>
+                    <div class="frow">
+                        <div class="ff">
+                            <label class="fl" for="fn">Full Name *</label>
+                            <input class="fi" type="text" id="fn" name="fullName" placeholder="Your full name" required>
+                        </div>
+                        <div class="ff">
+                            <label class="fl" for="em">Email *</label>
+                            <input class="fi" type="email" id="em" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div id="dynFields"></div>
+                    <div class="ff">
+                        <label class="fl" for="msg">Message</label>
+                        <textarea class="fi fi-ta" id="msg" name="message" rows="4" placeholder="How would you like to collaborate?"></textarea>
+                    </div>
+                    <p class="f-secure">🔒 Secure — your data is encrypted and never shared.</p>
+                    <button type="submit" class="btn btn-gold btn-full" id="submitBtn">
+                        Send Message →
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right col: contact info -->
+            <div class="contact-right" data-reveal>
+                <div class="ci-blocks">
+                    <div class="ci-block">
+                        <h3>Contact</h3>
+                        <p><span class="ci-label">General</span><a href="mailto:info@mindcraft-congo.org">info@mindcraft-congo.org</a></p>
+                        <p><span class="ci-label">Research Office</span><span>ALU Kigali Campus, Rwanda</span></p>
+                    </div>
+                    <div class="ci-block">
+                        <h3>Follow the Journey</h3>
+                        <p style="font-size:13px;color:var(--mid);margin-bottom:14px;">Watch our E-Lab videos, research updates, and team stories on YouTube.</p>
+                        <a href="https://www.youtube.com/@MindCraftLtd" class="btn btn-outline" style="display:inline-flex;font-size:11px;" target="_blank" rel="noopener">Watch on YouTube →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ───────────────────────────────────────────────────── -->
+<footer class="site-footer">
+    <div class="ft-main">
+        <div class="container">
+            <div class="ft-grid">
+                <div class="ft-brand">
+                    <div class="ft-logo">
+                        <div class="ft-hex">
+                            <svg viewBox="0 0 34 34" fill="none">
+                                <path d="M17 2L31 9.5V24.5L17 32L3 24.5V9.5Z" stroke="#D4AF37" stroke-width="1.5"/>
+                                <path d="M17 8V26M10 13L24 21M24 13L10 21" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>MINDCRAFT</span>
+                    </div>
+                    <p class="ft-tagline">Six leaders. One thinktank. One mission.</p>
+                    <p class="ft-desc">Mindcraft is an ALU E-Lab team working to prove that Congo's prosperity can be grown from its own soil — through the Train, Grow, Connect framework.</p>
+                </div>
+                <nav class="ft-col" aria-label="Footer navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#journey">Our Journey</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#mission">The Mission</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="ft-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">E-Lab Workbook</a></li>
+                        <li><a href="#">Lean Canvas Model</a></li>
+                        <li><a href="#">WaterAid Presentation</a></li>
+                        <li><a href="#">Prototype Canvas</a></li>
+                        <li><a href="#">WHATIF Campaign Video</a></li>
+                    </ul>
+                </div>
+                <div class="ft-col">
+                    <h4>Get In Touch</h4>
+                    <ul>
+                        <li><a href="mailto:info@mindcraft-congo.org">info@mindcraft-congo.org</a></li>
+                        <li><span>Kigali Campus, Rwanda</span></li>
+                        <li><span>Kwilu-Ngongo, DRC</span></li>
+                    </ul>
+                    <div class="ft-socials">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">ig</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-alu">
+        <div class="container">
+            <div class="alu-row">
+                <div class="alu-badge">ALU</div>
+                <p>Proudly developed within the <strong>African Leadership University (ALU) Entrepreneurial Leaders' Action Lab (E-Lab)</strong> | Challenge 06: Your Digital Print Project</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-base">
+        <div class="container">
+            <p>Copyright &copy; 2026 Team Mindcraft Thinktank. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Leaflet map JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+    'use strict';
+
+    // ── Navbar ───────────────────────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ── Mobile toggle ────────────────────────────────────────────
+    const toggle   = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        toggle.classList.toggle('toggled', open);
+        toggle.setAttribute('aria-expanded', open);
+    });
+
+    // ── Smooth scroll ────────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const t = document.querySelector(a.getAttribute('href'));
+            if (!t) return;
+            e.preventDefault();
+            window.scrollTo({ top: t.offsetTop - 68, behavior: 'smooth' });
+            navLinks.classList.remove('open');
+            toggle.classList.remove('toggled');
+        });
+    });
+
+    // ── Active nav on scroll ─────────────────────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const links    = document.querySelectorAll('.nav-link');
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                links.forEach(l => l.classList.remove('active'));
+                const a = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+                if (a) a.classList.add('active');
+            }
+        });
+    }, { threshold: 0.35 });
+    sections.forEach(s => io.observe(s));
+
+    // ── Scroll reveal ────────────────────────────────────────────
+    const ro = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-reveal]').forEach(el => ro.observe(el));
+
+    // ── Dynamic form fields ──────────────────────────────────────
+    const dynFields = document.getElementById('dynFields');
+    const templates = {
+        processor: `
+            <div class="frow">
+                <div class="ff"><label class="fl">Company</label><input class="fi" type="text" name="company" placeholder="e.g. Sucraf DRC"></div>
+                <div class="ff"><label class="fl">Capacity (tons/yr)</label><input class="fi" type="text" name="capacity" placeholder="e.g. 5,000 tons"></div>
+            </div>
+            <div class="ff"><label class="fl">Region</label>
+                <select class="fi"><option value="">Select a region</option>
+                    <option>Kwilu-Ngongo, Bas-Congo</option><option>Bas-Uélé Province</option>
+                    <option>Kasaï Region</option><option>Kinshasa</option><option>Other</option>
+                </select></div>`,
+        investor: `
+            <div class="frow">
+                <div class="ff"><label class="fl">Investment Type</label>
+                    <select class="fi"><option value="">Select</option>
+                        <option>Impact Investment</option><option>Development Finance</option>
+                        <option>Equity Partnership</option><option>Grant Funding</option>
+                    </select></div>
+                <div class="ff"><label class="fl">Range (USD)</label>
+                    <select class="fi"><option value="">Select</option>
+                        <option>$10k–$50k</option><option>$50k–$250k</option>
+                        <option>$250k–$1M</option><option>$1M+</option>
+                    </select></div>
+            </div>`,
+        farmer: `
+            <div class="frow">
+                <div class="ff"><label class="fl">Province / Location</label><input class="fi" type="text" name="loc" placeholder="e.g. Kwilu-Ngongo"></div>
+                <div class="ff"><label class="fl">Farm Size (ha)</label><input class="fi" type="text" name="farm" placeholder="e.g. 2.5 ha"></div>
+            </div>
+            <div class="ff"><label class="fl">Current Crops</label><input class="fi" type="text" name="crops" placeholder="e.g. sugarcane, cassava"></div>`
+    };
+    document.querySelectorAll('input[name="profile"]').forEach(r => {
+        r.addEventListener('change', () => { dynFields.innerHTML = templates[r.value] || ''; });
+    });
+
+    // ── Form submit ──────────────────────────────────────────────
+    document.getElementById('contactForm').addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = document.getElementById('submitBtn');
+        btn.textContent = '✓ Sent — we\'ll be in touch!';
+        btn.disabled = true;
+        btn.style.background = '#1A2E5E';
+    });
+
+    // ── Leaflet Map ──────────────────────────────────────────────
+    const map = L.map('map', { scrollWheelZoom: false }).setView([-3.5, 22.0], 5);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 18
+    }).addTo(map);
+
+    const markerStyle = (color) => L.divIcon({
+        className: '',
+        html: `<div style="width:14px;height:14px;background:${color};border:2px solid #fff;border-radius:50%;"></div>`,
+        iconSize: [14, 14],
+        iconAnchor: [7, 7]
+    });
+
+    const hubs = [
+        { ll: [-5.29, 14.63],  label: 'Kwilu-Ngongo',  desc: 'Bas-Congo Province, DRC',  color: '#1A2E5E' },
+        { ll: [2.80,  24.73],  label: 'Bas-Uélé',      desc: 'Northern DRC',             color: '#1A2E5E' },
+        { ll: [-5.0,  22.5],   label: 'Kasaï Region',  desc: 'Central DRC',              color: '#1A2E5E' },
+        { ll: [-1.97, 30.10],  label: 'Kigali Campus', desc: 'African Leadership University, Rwanda', color: '#D4AF37' }
+    ];
+
+    hubs.forEach(h => {
+        L.marker(h.ll, { icon: markerStyle(h.color) })
+            .addTo(map)
+            .bindPopup(`<strong>${h.label}</strong><br><span style="font-size:12px;color:#555">${h.desc}</span>`);
+    });
+
+})();
+</script>
+</body>
+</html>
